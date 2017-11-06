@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test01.js",
+  "scripts": {
+    "preinstall-chromedriver": "npm install",
+    "install-chromedriver": "node node_modules/chromedriver/install.js",
+    "pretest_e2e": "npm run install-chromedriver",
+    "test_e2e": "node release/test/rune2e.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phantom": "^4.0.5",
+    "selenium-webdriver": "^3.5.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "phantomjs-prebuilt": "^2.1.15",
+    "selenium-webdriver": "^3.5.0",
+    "webdriverio": "^4.8.0"
+  }
+}
